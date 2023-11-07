@@ -16,7 +16,7 @@ class ImageWithPrompt:
                     "STRING",
                     {
                         "multiline": True,
-                        "default": "Generate a high quality prompt to be used for image generation.",
+                        "default": "Generate a high quality caption for the image. The most important aspects of the image should be described first. If needed, weights can be applied to the caption in the following format: '(word or phrase:weight)', where the weight should be a float less than 2.",
                     },
                 ),
                 "max_tokens": ("INT", {"min": 1, "max": 2048, "default": 77}),
